@@ -40,7 +40,7 @@ You can get feedback on your project from fellow campers by sharing it in our Co
 
 body {
     font-family: 'Catamaran', sans-serif;
-    background-color: gray;
+    background-color: white;
 }
 
 #main-image {
@@ -49,51 +49,71 @@ body {
 }
 
 #main-text {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
-    color: #F5F5F5;
-    text-shadow: 0 1px 1px black;
+    color: black;
+    /*text-shadow: 0 1px 1px black;*/
     margin: 0;
+    padding-top: 10px;
 }
 
 hr {
     width: 50%;
-    box-shadow: 0 0 10px 1px silver;
+    /*box-shadow: 0 0 10px 1px silver;*/
     height: 1px;
-    background-color: #F5F5F5;
+    background-color: black;
     border-radius: 80%;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 #header-list {
     list-style-type: none;
     text-align: center;
-    text-shadow: 0 1px 1px black;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    color: #F5F5F5;
-    /*padding: 10px 0 10px 0;*/
+    color: black;
+    padding: 0;
 }
 
 #header-row {
-    background-color: #414141;
+    background-color: white;
+    margin-right: 5px;
 }
 
 #head {
-    background-color: #414141;
+    background-color: white;
     margin: 0;
-    padding: 15px 0 15px 0;
+    text-align: center;
 }
 
 #splash {
     padding: 0;
-    border-color: black;
+    border: none;
+    box-shadow: none;
 }
 
 #para {
-    padding: 20px 200px 20px 200px;
-    text-align: center;
+    padding: 10px 50px 10px 50px;
+    text-align: justify;
     color: #535353;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #535353;
+}
+
+#timeline {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+#timeline-header {
+    text-align: center;
+}
+
+#thumbnail-caption {
+    border: none;
+    border-box: none;
 }
 
 <script src="script.js"></script>;
@@ -123,17 +143,24 @@ hr {
         <div class="col-xs-12">
             <div class="thumbnail" id="splash">
                 <img src="images/musk-risk.jpg" class="img-responsive" id="main-image" alt="Photograph of Elon Musk">
-                <div class="caption">
-                    <h3 class="text-primary text-center" id="para">Elon is one of the greatest innovators to have ever lived. He has worked fervently and relentlessly to advance our species; pushing the boundaries of technologies and possibilites, transforming failure into triumph, and persisting through doubt and ridicule. Musk has transcended into a living legend.</h3>
+                <div class="caption" id="thumbnail-caption">
+                    <h3 class="text-primary text-center" id="para">Elon is one of the greatest innovators to have ever lived. He has worked fervently and relentlessly to advance our species. Pushing the boundaries of technologies and possibilites, transforming failure into triumph, and persisting through doubt and ridicule, Musk has transcended into a living legend.</h3>
                 </div>
             </div>
         </div>
     </div>
     <!-- </div> -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="timeline">
+        <h2 id="timeline-header">Timeline</h2>
+        <hr/>
         <p>Bacon ipsum dolor amet prosciutto salami cupim fatback tri-tip ham hock. Kevin beef pancetta pork picanha fatback pork loin tenderloin kielbasa meatloaf strip steak. Pork chop alcatra jerky sirloin, rump bresaola strip steak frankfurter drumstick leberkas ground round flank tongue sausage ham hock. Flank porchetta t-bone shank.</p>
         <p>Biltong chicken rump pancetta spare ribs swine meatloaf pork chop. Pancetta pork loin turkey meatball. Bresaola venison kevin strip steak ribeye. Ham hock corned beef swine jerky doner salami. Tenderloin boudin picanha chuck beef, tongue capicola jerky kielbasa. Tail strip steak jowl chicken, corned beef beef pastrami frankfurter. Ball tip chuck hamburger jowl, drumstick chicken turkey andouille filet mignon shoulder ham porchetta prosciutto picanha. </p>
         <p>Where ignorance lurks, so too do the frontiers of discovery and imagination. Houston, Tranquillity Base here. The Eagle has landed. We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically. Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon. I believe every human has a finite number of heartbeats. I don't intend to waste any of mine</p>
+    </div>
+    <div class="row" id="header-row">
+        <ul>
+            <li class="col-xs-12" id="header-list">To find out more about Elon, check out his Wikipedia page!</li>
+        </ul>
     </div>
     <script>
     $(function() {
