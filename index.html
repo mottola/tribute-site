@@ -1,0 +1,145 @@
+<!-- 
+1) Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/NNvBQW/.
+
+2) Rule #1: Don't look at the example project's code. Figure it out for yourself.
+
+3) Rule #2: Fulfill the below user stories. Use whichever libraries you need. Give it your own personal style.
+
+4) User Story: I can view a tribute page with an image and text.
+
+5) User Story: I can click on a link that will take me to an external website with further information on the topic.
+
+6) Remember to use Read-Search-Ask if you get stuck.
+
+7) When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
+
+You can get feedback on your project from fellow campers by sharing it in our Code Review Chatroom. You can also share it on Twitter and your city's Campsite (on Facebook).
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elon Musk - A Tribute</title>
+    <!-- Google's jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+</head>
+<style>
+@import url(style.css);
+
+/* This is a much better way to import a Google Font */
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: gray;
+}
+
+#main-image {
+    top: 0;
+    left: 0;
+}
+
+#main-text {
+    font-size: 40px;
+    font-weight: 600;
+    color: #F5F5F5;
+    text-shadow: 0 1px 1px black;
+    margin: 0;
+}
+
+hr {
+    width: 50%;
+    box-shadow: 0 0 10px 1px silver;
+    height: 1px;
+    background-color: #F5F5F5;
+    border-radius: 80%;
+    margin-top: 5px;
+}
+
+#header-list {
+    list-style-type: none;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F5F5F5;
+    /*padding: 10px 0 10px 0;*/
+}
+
+#header-row {
+    background-color: #414141;
+}
+
+#head {
+    background-color: #414141;
+    margin: 0;
+    padding: 15px 0 15px 0;
+}
+
+#splash {
+    padding: 0;
+    border-color: black;
+}
+
+#para {
+    padding: 20px 200px 20px 200px;
+    text-align: center;
+    color: #535353;
+}
+
+<script src="script.js"></script>;
+</style>
+</head>
+
+<body>
+    <!-- Required for grids in Bootstrap. Provides padding around everything it contains. container-fluid would force content to take up the width of the page, used sparingly. -->
+    <div class="page-header primary-text center-text navbar-fixed-top" id="head">
+        <!-- Adds space around and enlarge text, also provides underline -->
+        <h1 class="text-primary text-center" id="main-text">Elon Musk</h1>
+        <hr/>
+        <!-- </div> -->
+        <!-- <div class="container-fluid"> -->
+        <div class="row" id="header-row">
+            <ul>
+                <li class="col-xs-4" id="header-list">Innovator</li>
+                <li class="col-xs-4" id="header-list">Visionary</li>
+                <li class="col-xs-4" id="header-list">Genius</li>
+            </ul>
+        </div>
+        </hr>
+        <!-- </div> -->
+    </div>
+    <!-- <div class="container"> -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="thumbnail" id="splash">
+                <img src="images/musk-risk.jpg" class="img-responsive" id="main-image" alt="Photograph of Elon Musk">
+                <div class="caption">
+                    <h3 class="text-primary text-center" id="para">Elon is one of the greatest innovators to have ever lived. He has worked fervently and relentlessly to advance our species; pushing the boundaries of technologies and possibilites, transforming failure into triumph, and persisting through doubt and ridicule. Musk has transcended into a living legend.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <div class="container-fluid">
+        <p>Bacon ipsum dolor amet prosciutto salami cupim fatback tri-tip ham hock. Kevin beef pancetta pork picanha fatback pork loin tenderloin kielbasa meatloaf strip steak. Pork chop alcatra jerky sirloin, rump bresaola strip steak frankfurter drumstick leberkas ground round flank tongue sausage ham hock. Flank porchetta t-bone shank.</p>
+        <p>Biltong chicken rump pancetta spare ribs swine meatloaf pork chop. Pancetta pork loin turkey meatball. Bresaola venison kevin strip steak ribeye. Ham hock corned beef swine jerky doner salami. Tenderloin boudin picanha chuck beef, tongue capicola jerky kielbasa. Tail strip steak jowl chicken, corned beef beef pastrami frankfurter. Ball tip chuck hamburger jowl, drumstick chicken turkey andouille filet mignon shoulder ham porchetta prosciutto picanha. </p>
+        <p>Where ignorance lurks, so too do the frontiers of discovery and imagination. Houston, Tranquillity Base here. The Eagle has landed. We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically. Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon. I believe every human has a finite number of heartbeats. I don't intend to waste any of mine</p>
+    </div>
+    <script>
+    $(function() {
+        $('#')
+    });
+    </script>
+</body>
+
+</html>
