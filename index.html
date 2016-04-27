@@ -1,17 +1,5 @@
 <!-- 
-1) Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/NNvBQW/.
-
-2) Rule #1: Don't look at the example project's code. Figure it out for yourself.
-
-3) Rule #2: Fulfill the below user stories. Use whichever libraries you need. Give it your own personal style.
-
-4) User Story: I can view a tribute page with an image and text.
-
 5) User Story: I can click on a link that will take me to an external website with further information on the topic.
-
-6) Remember to use Read-Search-Ask if you get stuck.
-
-7) When you are finished, click the "I've completed this challenge" button and include a link to your CodePen.
 
 You can get feedback on your project from fellow campers by sharing it in our Code Review Chatroom. You can also share it on Twitter and your city's Campsite (on Facebook).
  -->
@@ -21,7 +9,7 @@ You can get feedback on your project from fellow campers by sharing it in our Co
 <head>
     <meta charset="UTF-8">
     <title>Elon Musk - A Tribute</title>
-    <!-- Google's jQuery link -->
+    <!-- Google's jQuery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -32,92 +20,9 @@ You can get feedback on your project from fellow campers by sharing it in our Co
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
     </script>
-</head>
-<style>
-@import url(style.css);
-
-/* This is a much better way to import a Google Font */
-
-body {
-    font-family: 'Catamaran', sans-serif;
-    background-color: white;
-}
-
-#main-image {
-    top: 0;
-    left: 0;
-}
-
-#main-text {
-    font-size: 32px;
-    font-weight: 600;
-    color: black;
-    /*text-shadow: 0 1px 1px black;*/
-    margin: 0;
-    padding-top: 10px;
-}
-
-hr {
-    width: 50%;
-    /*box-shadow: 0 0 10px 1px silver;*/
-    height: 1px;
-    background-color: black;
-    border-radius: 80%;
-    margin-top: 3px;
-}
-
-#header-list {
-    list-style-type: none;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    color: black;
-    padding: 0;
-}
-
-#header-row {
-    background-color: white;
-    margin-right: 5px;
-}
-
-#head {
-    background-color: white;
-    margin: 0;
-    text-align: center;
-}
-
-#splash {
-    padding: 0;
-    border: none;
-    box-shadow: none;
-}
-
-#para {
-    padding: 10px 50px 10px 50px;
-    text-align: justify;
-    color: #535353;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    border-bottom: 1px solid #535353;
-}
-
-#timeline {
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: left;
-}
-
-#timeline-header {
-    text-align: center;
-}
-
-#thumbnail-caption {
-    border: none;
-    border-box: none;
-}
-
-<script src="script.js"></script>;
-</style>
+    <style>
+    @import url(style.css);
+    </style>
 </head>
 
 <body>
@@ -126,47 +31,88 @@ hr {
         <!-- Adds space around and enlarge text, also provides underline -->
         <h1 class="text-primary text-center" id="main-text">Elon Musk</h1>
         <hr/>
-        <!-- </div> -->
-        <!-- <div class="container-fluid"> -->
-        <div class="row" id="header-row">
-            <ul>
-                <li class="col-xs-4" id="header-list">Innovator</li>
-                <li class="col-xs-4" id="header-list">Visionary</li>
-                <li class="col-xs-4" id="header-list">Genius</li>
-            </ul>
+        <div class="container-fluid">
+            <div class="row" id="header-row">
+                <ul>
+                    <li class="col-xs-4" id="header-list">Innovator</li>
+                    <li class="col-xs-4" id="header-list">Visionary</li>
+                    <li class="col-xs-4" id="header-list">Genius</li>
+                </ul>
+            </div>
+            </hr>
         </div>
-        </hr>
-        <!-- </div> -->
     </div>
-    <!-- <div class="container"> -->
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="thumbnail" id="splash">
-                <img src="images/musk-risk.jpg" class="img-responsive" id="main-image" alt="Photograph of Elon Musk">
-                <div class="caption" id="thumbnail-caption">
-                    <h3 class="text-primary text-center" id="para">Elon is one of the greatest innovators to have ever lived. He has worked fervently and relentlessly to advance our species. Pushing the boundaries of technologies and possibilites, transforming failure into triumph, and persisting through doubt and ridicule, Musk has transcended into a living legend.</h3>
+    <div class="container" id="image-container">
+        <!-- -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="thumbnail" id="splash">
+                    <img src="images/musk-risk.jpg" class="img-responsive" id="main-image" alt="Photograph of Elon Musk">
+                    <div class="caption" id="thumbnail-caption">
+                        <h5 class="text-primary text-center" id="para">Elon is one of the greatest innovators to ever live. He has worked fervently and relentlessly to advance our species and protect our planet. Pushing the boundaries of technology and what is thought possible, transforming failures into triumphs, and persisting through doubt and ridicule, Musk has transcended the status of personal hero and has become a living legend.</h5>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- </div> -->
     <div class="container-fluid" id="timeline">
         <h2 id="timeline-header">Timeline</h2>
         <hr/>
-        <p>Bacon ipsum dolor amet prosciutto salami cupim fatback tri-tip ham hock. Kevin beef pancetta pork picanha fatback pork loin tenderloin kielbasa meatloaf strip steak. Pork chop alcatra jerky sirloin, rump bresaola strip steak frankfurter drumstick leberkas ground round flank tongue sausage ham hock. Flank porchetta t-bone shank.</p>
-        <p>Biltong chicken rump pancetta spare ribs swine meatloaf pork chop. Pancetta pork loin turkey meatball. Bresaola venison kevin strip steak ribeye. Ham hock corned beef swine jerky doner salami. Tenderloin boudin picanha chuck beef, tongue capicola jerky kielbasa. Tail strip steak jowl chicken, corned beef beef pastrami frankfurter. Ball tip chuck hamburger jowl, drumstick chicken turkey andouille filet mignon shoulder ham porchetta prosciutto picanha. </p>
-        <p>Where ignorance lurks, so too do the frontiers of discovery and imagination. Houston, Tranquillity Base here. The Eagle has landed. We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically. Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. If you could see the earth illuminated when you were in a place as dark as night, it would look to you more splendid than the moon. I believe every human has a finite number of heartbeats. I don't intend to waste any of mine</p>
-    </div>
-    <div class="row" id="header-row">
-        <ul>
-            <li class="col-xs-12" id="header-list">To find out more about Elon, check out his Wikipedia page!</li>
-        </ul>
-    </div>
-    <script>
-    $(function() {
-        $('#')
-    });
-    </script>
+        <figure class="figure" id="timeline-image">
+            <img src="images/musk.jpg" class="figure-img img-fluid img-rounded">
+        </figure>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul id="timeline">
+                    <li><strong>1971:</strong> Elon is born in South Africa</li>
+                    <li><strong>1979:</strong> At just eight years old, Elon reads ten hours a day and has read the entire Encyclopedia Brittanica.</li>
+                    <li><strong>1983:</strong> At only twelve years of age, Elon codes and sells Blastar, his own video game.</li>
+                    <li><strong>1985:</strong> Elon concludes that his purpose in life is to save humanity</li>
+                    <li><strong>1988:</strong> Elon moves to Canada.</li>
+                    <li><strong>1989:</strong> Starts college at Queen's University in Ontario</li>
+                    <li><strong>1991:</strong> Transfers to the University of Pennsylvania</li>
+                    <li><strong>1994:</strong> Elon graduates from the University of Pennsylvania with degrees in both Economics and Physics.</li>
+                    <li><strong>1995:</strong> Musk begins his PhD program in Applied Physics at Stanford University, but soon leaves to pursue passions in industry.</li>
+                    <li><strong>1995:</strong> Elon starts his first company - Zip2.</li>
+                    <li><strong>1999:</strong> Zip2 sells for $22 million dollars. Musk then starts online banking company X.com.</li>
+                    <li><strong>2000:</strong> Merges X.com with Confinity, thus creating Paypal</li>
+                    <li><strong>2000:</strong> Elon marries his college girlfriend, Justine.</li>
+                    <li><strong>2002:</strong> Musk starts SpaceX. In same year, receives $250 million for sale of Paypal.</li>
+                    <li><strong>2004:</strong> Invests in an co-founds Tesla motors, the world's first all electric vehicle.</li>
+                    <li><strong>2006:</strong> SpaceX wins NASA contracts to deliver cargo to the International Space Station</li>
+                    <li><strong>2006:</strong> Invests in an co-founds SolarCity</li>
+                    <li><strong>2008:</strong> Musk divorces Justine. Successfully launches rocket into low earth orbit after three failed attempts. Wins NASA contract for $1.6 billion dollars.</li>
+                    <li><strong>2010:</strong> Elon marries Talulah</li>
+                    <li><strong>2012:</strong> Elon divorces Talulah. The Dragon capsule successfully docks with the International Space Station.</li>
+                    <li><strong>2013:</strong> Elon remarries Talulah. Elon also unveils plans to build Hyperloop.</li>
+                    <li><strong>2015:</strong> Successfully lands rocket onto platform post orbit. A first in history.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="slide-container">
+            <div class="header">
+                <h1>Companies Owned by Musk</h1>
+                <hr/>
+            </div>
+            <div id="slider">
+                <!-- ADD CAPTIONS TO THE SLIDES FOR DESCRIPTIONS -->
+                <ul class="slides">
+                    <li class="slide"><img src="images/spacex.jpg" /></li>
+                    <li class="slide"><img src="images/tesla.jpg" /></li>
+                    <li class="slide"><img src="images/solar.jpg" /></li>
+                    <li class="slide"><img src="images/hyperloop.jpg" /></li>
+                    <li class="slide"><img src="images/openai.jpg" /></li>
+                    <li class="slide"><img src="images/mars.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <!-- WRITE ABOUT WHAT MUSK MEANS TO YOU, AND HOW HE HAS INSPIRED YOU. WRITE WHAT KIND OF FUTURE YOU FORSEE THANKS SOLELY TO MUSK -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Bonum liberi: misera orbitas. Prioris generis est docilitas, memoria; Duo Reges: constructio interrete. Post enim Chrysippum eum non sane est disputatum. Hic quoque suus est de summoque bono dissentiens dici vere Peripateticus non potest. Omnis enim est natura diligens sui. Non risu potius quam oratione eiciendum? Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit. Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Summus dolor plures dies manere non potest? Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Qui ita affectus, beatum esse numquam probabis; Expressa vero in iis aetatibus, quae iam confirmatae sunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Quippe: habes enim a rhetoribus; Sed quid sentiat, non videtis. Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Oratio me istius philosophi non offendit; Si autem id non concedatur, non continuo vita beata tollitur. Nescio quo modo praetervolavit oratio. Cur id non ita fit? Quid est, quod ab ea absolvi et perfici debeat? Quod equidem non reprehendo; Non potes, nisi retexueris illa. At, si voluptas esset bonum, desideraret. Num igitur eum postea censes anxio animo aut sollicito fuisse? Haec quo modo conveniant, non sane intellego. Quacumque enim ingredimur, in aliqua historia vestigium ponimus. Sin laboramus, quis est, qui alienae modum statuat industriae? Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Consequens enim est et post oritur, ut dixi. Sed tempus est, si videtur, et recta quidem ad me. Sin aliud quid voles, postea. Quamquam id quidem licebit iis existimare, qui legerint. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Bonum liberi: misera orbitas. Prioris generis est docilitas, memoria; Duo Reges: constructio interrete. Post enim Chrysippum eum non sane est disputatum. Hic quoque suus est de summoque bono dissentiens dici vere Peripateticus non potest. Omnis enim est natura diligens sui. Non risu potius quam oratione eiciendum? Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit. Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Summus dolor plures dies manere non potest? Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Qui ita affectus, beatum esse numquam probabis; Expressa vero in iis aetatibus, quae iam confirmatae sunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Quippe: habes enim a rhetoribus; Sed quid sentiat, non videtis. Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Oratio me istius philosophi non offendit; Si autem id non concedatur, non continuo vita beata tollitur. Nescio quo modo praetervolavit oratio. Cur id non ita fit? Quid est, quod ab ea absolvi et perfici debeat? Quod equidem non reprehendo; Non potes, nisi retexueris illa. At, si voluptas esset bonum, desideraret. Num igitur eum postea censes anxio animo aut sollicito fuisse? Haec quo modo conveniant, non sane intellego. Quacumque enim ingredimur, in aliqua historia vestigium ponimus. Sin laboramus, quis est, qui alienae modum statuat industriae? Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Consequens enim est et post oritur, ut dixi. Sed tempus est, si videtur, et recta quidem ad me. Sin aliud quid voles, postea. Quamquam id quidem licebit iis existimare, qui legerint. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Equidem etiam Epicurum, in physicis quidem, Democriteum puto. Bonum liberi: misera orbitas. Prioris generis est docilitas, memoria; Duo Reges: constructio interrete. Post enim Chrysippum eum non sane est disputatum. Hic quoque suus est de summoque bono dissentiens dici vere Peripateticus non potest. Omnis enim est natura diligens sui. Non risu potius quam oratione eiciendum? Sin tantum modo ad indicia veteris memoriae cognoscenda, curiosorum. Hoc ille tuus non vult omnibusque ex rebus voluptatem quasi mercedem exigit. Tum Lucius: Mihi vero ista valde probata sunt, quod item fratri puto. Summus dolor plures dies manere non potest? Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Qui ita affectus, beatum esse numquam probabis; Expressa vero in iis aetatibus, quae iam confirmatae sunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Quippe: habes enim a rhetoribus; Sed quid sentiat, non videtis. Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Oratio me istius philosophi non offendit; Si autem id non concedatur, non continuo vita beata tollitur. Nescio quo modo praetervolavit oratio. Cur id non ita fit? Quid est, quod ab ea absolvi et perfici debeat? Quod equidem non reprehendo; Non potes, nisi retexueris illa. At, si voluptas esset bonum, desideraret. Num igitur eum postea censes anxio animo aut sollicito fuisse? Haec quo modo conveniant, non sane intellego. Quacumque enim ingredimur, in aliqua historia vestigium ponimus. Sin laboramus, quis est, qui alienae modum statuat industriae? Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Consequens enim est et post oritur, ut dixi. Sed tempus est, si videtur, et recta quidem ad me. Sin aliud quid voles, postea. Quamquam id quidem licebit iis existimare, qui legerint. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio?</p>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
