@@ -1,134 +1,154 @@
    @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-    body {
-        font-family: 'Josefin Sans', sans-serif;
-        background-color: white;
-    }
-    
-    #main-image {
-        top: 0;
-        left: 0;
-    }
-    
-    #main-text {
-        font-size: 40px;
-        font-weight: 600;
-        color: black;
-        margin: 0;
-        padding-top: 10px;
-        letter-spacing: 3px;
-    }
-    
-    hr {
-        width: 50%;
-        height: 1px;
-        background-color: black;
-        border-radius: 80%;
-        margin-top: 3px;
-    }
-    
-    #header-list {
-        list-style-type: none;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        color: black;
-        padding: 0;
-    }
-    
-    #header-row {
-        margin-right: 20px;
-    }
-    
-    #head {
-        background-color: rgba(255, 255, 255, 0.85);
-        margin: 0;
-        text-align: center;
-    }
-    
-    #splash {
-        padding: 0;
-        border: none;
-        box-shadow: none;
-    }
-    
-    #para {
-        padding: 10px 50px 10px 50px;
-        text-align: justify;
-        color: #575757;
-        font-size: 16px;
-        margin-top: 2px;
-        margin-bottom: 2px;
-        border-bottom: 1px solid #535353;
-    }
-    
-    #timeline {
-        text-align: center;
-        list-style-type: none;
-        font-size: 16px;
-        line-height: 225%;
-    }
-    
-    #timeline-header {
-        text-align: center;
-    }
-    
-    #thumbnail-caption {
-        border: none;
-        border-box: none;
-    }
-    
-    #timeline-image {
-        margin-bottom: 20px;
-    }
-    
-    #slider {
-        width: 850px;
-        height: 500px;
-        overflow: hidden;
-        image-position: center;
-        margin-left: 150px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    
-    #image-container {
-        margin-top: 108px;
-        margin-bottom: 30px;
-    }
-    
-    #slider .slides {
-        display: block;
-        width: 6000px;
-        height: 500px;
-        margin: 0;
-        padding: 0;
-    }
-    
-    #slider .slide {
-        float: left;
-        list-style-type: none;
-        width: 850px;
-        height: 500px;
-    }
-    
-    #slide-container {
-        margin: none;
-    }
-    
-    #more-info {
-        font-size: 14px;
-        font-weight: 500;
-        color: black;
-        padding: 0;
-        display: inline;
-    }
-    #landing, h2 {
-        text-align: center;
-    }
-    #landing {
-        margin: 40px;
-    }
-    p {
-        text-align:left;
-        margin-bottom: 30px;
-    }
+   body {
+       font-family: 'Josefin Sans', sans-serif;
+       background-color: white;
+   }
+   
+   #main-image {
+       top: 0;
+       left: 0;
+   }
+   
+   #main-text {
+       font-size: 40px;
+       font-weight: 600;
+       color: black;
+       margin: 0;
+       padding-top: 10px;
+       letter-spacing: 3px;
+   }
+   
+   hr {
+       width: 50%;
+       height: 1px;
+       background-color: black;
+       border-radius: 80%;
+       margin-top: 3px;
+   }
+   
+   #header-list {
+       list-style-type: none;
+       text-align: center;
+       font-size: 14px;
+       font-weight: 500;
+       color: black;
+       padding: 0;
+   }
+   
+   #header-row {
+       margin-right: 20px;
+   }
+   
+   #head {
+       background-color: rgba(255, 255, 255, 0.85);
+       margin: 0;
+       text-align: center;
+   }
+   
+   #splash {
+       padding: 0;
+       border: none;
+       box-shadow: none;
+   }
+   
+   #para {
+       padding: 10px 50px 10px 50px;
+       text-align: justify;
+       color: #575757;
+       font-size: 16px;
+       margin-top: 2px;
+       margin-bottom: 2px;
+       border-bottom: 1px solid #535353;
+   }
+   
+   #timeline {
+       text-align: center;
+       list-style-type: none;
+       font-size: 16px;
+       line-height: 225%;
+   }
+   
+   #timeline-header {
+       text-align: center;
+   }
+   
+   #thumbnail-caption {
+       border: none;
+       border-box: none;
+   }
+   
+   #timeline-image {
+       margin-bottom: 20px;
+   }
+   
+   #slider {
+       width: 850px;
+       height: 470px;
+       overflow: hidden;
+       image-position: center;
+       margin-left: 150px;
+       margin-top: 30px;
+       margin-bottom: 30px;
+   }
+   
+   #image-container {
+       margin-top: 108px;
+       margin-bottom: 30px;
+   }
+   
+   #slider .slides {
+       display: block;
+       width: 6000px;
+       height: 470px;
+       margin: 0;
+       padding: 0;
+   }
+   
+   #slider .slide {
+       float: left;
+       list-style-type: none;
+       width: 850px;
+       height: 470px;
+   }
+   
+   #slide-container {
+       margin: none;
+   }
+   
+   #more-info {
+       font-size: 14px;
+       font-weight: 500;
+       color: black;
+       padding: 0;
+       display: inline;
+   }
+   
+   #landing,
+   h2 {
+       text-align: center;
+   }
+   
+   #landing {
+       margin: 40px;
+   }
+   
+   p {
+       text-align: left;
+       margin-bottom: 30px;
+   }
+   
+   #mars-image {
+       margin-top: 35px;
+       margin-bottom: 35px;
+
+   }
+
+   #glyphs {
+    padding-left: 7px;
+    color:black;
+    font-size: large;
+   }
+
+   #hire-me {
+    text-align: center;
+   }
