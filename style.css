@@ -1,6 +1,6 @@
-    @import url(https://fonts.googleapis.com/css?family=Catamaran);
+   @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
     body {
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         background-color: white;
     }
     
@@ -36,12 +36,11 @@
     }
     
     #header-row {
-        background-color: rgba(255, 255, 255, 0.5);
         margin-right: 20px;
     }
     
     #head {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.85);
         margin: 0;
         text-align: center;
     }
@@ -114,4 +113,22 @@
     
     #slide-container {
         margin: none;
+    }
+    
+    #more-info {
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        padding: 0;
+        display: inline;
+    }
+    #landing, h2 {
+        text-align: center;
+    }
+    #landing {
+        margin: 40px;
+    }
+    p {
+        text-align:left;
+        margin-bottom: 30px;
     }

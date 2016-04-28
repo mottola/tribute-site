@@ -19,7 +19,7 @@ $(function() {
                 'margin-left': '-=' + width
             }, animationSpeed, function() {
                 currentSlide++;
-                if (currentSlide === $slides.length) {
+                if (currentSlide > $slides.length) {
                     currentSlide = 1;
                     $slideContainer.css('margin-left', 0);
                 }
