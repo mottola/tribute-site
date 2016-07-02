@@ -85,10 +85,10 @@ hr {
     width: 850px;
     height: 470px;
     overflow: hidden;
-    image-position: center;
-    margin-left: 150px;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #image-container {
@@ -113,6 +113,7 @@ hr {
 
 #slide-container {
     margin: none;
+    position: center;
 }
 
 #more-info {
@@ -147,4 +148,3 @@ p {
     text-align: center;
     font-size: 16px;
 }
-
